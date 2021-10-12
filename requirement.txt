@@ -1,0 +1,5 @@
+pytest==5.4.2
+selenium==3.141.0
+urllib-3 0.1
+fastapi 0.70.0
+
