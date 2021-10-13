@@ -16,5 +16,4 @@ def test_check_get_request_more_params_for_sum_operation():
     }
     response, response_body = BaseHelper.get_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 422
-    error = ErrorConfig.get_more_params
-    assert response_body["detail"] == error
+    assert response_body["detail"] == ErrorConfig.get_more_params

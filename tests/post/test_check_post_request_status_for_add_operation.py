@@ -16,5 +16,4 @@ def test_check_post_request_status_for_add_operation():
     }
     response, response_body = BaseHelper.post_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 200
-    result = CalculationHelper.add(params["params"])
-    assert response_body["add_result = "] == result
+    assert response_body["add_result = "] == CalculationHelper.add(params["params"])

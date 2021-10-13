@@ -15,5 +15,4 @@ def test_check_post_request_empty_username_password_for_subtraction_operation():
     }
     response, response_body = BaseHelper.post_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 400
-    error = ErrorConfig.empty_username_password
-    assert response_body["detail"] == error
+    assert response_body["detail"] == ErrorConfig.empty_username_password

@@ -16,5 +16,4 @@ def test_check_post_request_more_params_for_multiplication_operation():
     }
     response, response_body = BaseHelper.post_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 422
-    error = ErrorConfig.post_more_params
-    assert response_body["detail"] == error
+    assert response_body["detail"] == ErrorConfig.post_more_params

@@ -16,5 +16,4 @@ def test_check_post_request_status_for_sum_operation():
     }
     response, response_body = BaseHelper.get_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 422
-    error = ErrorConfig.not_correct_params
-    assert response_body["detail"] == error
+    assert response_body["detail"] == ErrorConfig.not_correct_params
