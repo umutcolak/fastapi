@@ -3,8 +3,8 @@ from tests.base_helper.base_helper import BaseHelper
 from api.config import Config
 
 
-def test_check_post_request_status_for_division_operation():
-    """açıklama"""
+def test_check_post_request_not_correct_for_division_operation():
+    """test check post request not correct for division operation"""
 
     operation = "division"
     params = {

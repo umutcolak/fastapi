@@ -4,7 +4,7 @@ from api.config import Config
 
 
 def test_check_post_request_status_for_subtraction_operation():
-    """açıklama"""
+    """test check post request status for subtraction operation"""
 
     operation = "subtraction"
     params = {

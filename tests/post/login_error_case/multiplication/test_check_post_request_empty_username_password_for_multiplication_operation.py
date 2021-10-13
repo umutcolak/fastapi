@@ -2,8 +2,8 @@ from api.error_config import ErrorConfig
 from tests.base_helper.base_helper import BaseHelper
 
 
-def test_check_post_request_status_for_multiplication_operation():
-    """açıklama"""
+def test_check_post_request_empty_username_password_for_multiplication_operation():
+    """test check post request empty username password for multiplication operation"""
 
     operation = "multiplication"
     params = {

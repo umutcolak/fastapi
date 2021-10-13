@@ -3,8 +3,8 @@ from tests.base_helper.base_helper import BaseHelper
 from api.config import Config
 
 
-def test_check_post_request_status_for_multiplication_operation():
-    """açıklama"""
+def test_check_post_request_empty_password_for_multiplication_operation():
+    """test check post request empty password for multiplication operation"""
 
     operation = "multiplication"
     params = {

@@ -3,7 +3,7 @@ from tests.base_helper.base_helper import BaseHelper
 
 
 def test_check_post_request_status_for_division_operation():
-    """açıklama"""
+    """test check post request empty username password for division operation"""
 
     operation = "division"
     params = {
