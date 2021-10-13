@@ -4,34 +4,28 @@ import math
 class CalculationHelper:
     @staticmethod
     def add(value, result=0):
-        array = (list(map(int, value.split(","))))
-        for array_index in range(len(array)):
-            result = result + array[0]
-            array.pop(0)
+        for i in map(int, value.split(",")):
+            result += i
         return result
 
     @staticmethod
     def subtraction(value, result=0):
-        array = (list(map(int, value.split(","))))
-        for array_index in range(len(array)):
-            result = result - array[0]
-            array.pop(0)
+        for i in map(int, value.split(",")):
+            result -= i
         return result
 
     @staticmethod
     def multiplication(value, result=1):
-        array = (list(map(int, value.split(","))))
-        for array_index in range(len(array)):
-            result = result * array[0]
-            array.pop(0)
+        for i in map(int, value.split(",")):
+            result *= i
         return result
 
     @staticmethod
-    def division(value, result=1):
+    def division(value):
         array = (list(map(int, value.split(","))))
-        for array_index in range(len(array)):
-            result = result / array[0]
-            array.pop(0)
+        result = array[0]
+        for array_index in array[1:]:
+            result = result / array_index
         return int(result)
 
     @staticmethod
