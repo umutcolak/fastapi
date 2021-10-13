@@ -2,8 +2,8 @@ from api.error_config import ErrorConfig
 from tests.base_helper.base_helper import BaseHelper
 
 
-def test_check_post_request_status_for_factorial_operation():
-    """açıklama"""
+def test_check_get_request_empty_username_password_for_factorial_operation():
+    """test check get request empty username password for factorial operation"""
 
     operation = "factorial"
     params = {

@@ -3,8 +3,8 @@ from api.config import Config
 from api.error_config import ErrorConfig
 
 
-def test_check_post_request_status_for_factorial_operation():
-    """açıklama"""
+def test_check_get_request_not_correct_params_for_factorial_operation():
+    """test check get request not correct params for factorial operation"""
 
     operation = "factorial"
     params = {

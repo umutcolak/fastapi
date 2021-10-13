@@ -3,8 +3,8 @@ from tests.base_helper.base_helper import BaseHelper
 from api.config import Config
 
 
-def test_check_post_request_status_for_factorial_operation():
-    """açıklama"""
+def test_check_post_request_result_for_factorial_operation():
+    """Test check post request result for factorial operation"""
 
     operation = "factorial"
     params = {

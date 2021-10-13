@@ -3,8 +3,8 @@ from tests.base_helper.base_helper import BaseHelper
 from api.config import Config
 
 
-def test_check_post_request_status_for_sum_operation():
-    """açıklama"""
+def test_check_get_request_more_params_for_sum_operation():
+    """test check get request more params for sum operation"""
 
     operation = "sum"
     params = {

@@ -4,7 +4,7 @@ from api.config import Config
 
 
 def test_check_post_request_status_for_sum_operation():
-    """açıklama"""
+    """test check get request not correct params for sum operation"""
 
     operation = "sum"
     params = {
