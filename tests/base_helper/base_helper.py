@@ -1,4 +1,3 @@
-from urllib import parse
 import requests
 import json
 
@@ -11,13 +10,12 @@ class BaseHelper:
     def get_request_for_endpoint(operation, params, headers):
         endpoint = host + operation
         response = requests.get(endpoint, params=params, headers=headers)
-        response_body = json.loads(response.text)
-        return response, response_body
+        response_body_json = json.loads(response.text)
+        return response, response_body_json
 
     @staticmethod
     def post_request_for_endpoint(operation, params, headers):
         endpoint = host + operation
-        params = parse.urlencode(params, safe=',')
         response = requests.post(endpoint, params=params, headers=headers)
-        response_body = json.loads(response.text)
-        return response, response_body
+        response_body_json = json.loads(response.text)
+        return response, response_body_json

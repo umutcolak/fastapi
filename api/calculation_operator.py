@@ -55,12 +55,12 @@ class CalculationOperator(CalculationHelper):
                 return CalculationOperator.post_calculation_operator(operation, params, username)
             elif operation in list(map(lambda calc: calc.value, GetCalculation._member_map_.values())):
                 return CalculationOperator.get_calculation_operator(operation, params, username)
-        elif password == Config.password and username == "":
+        elif username != Config.username and password == Config.password:
             raise HTTPException(status_code=400,
                                 detail=ErrorConfig.empty_username)
-        elif username == Config.username and password == "":
+        elif username == Config.username and password != Config.password:
             raise HTTPException(status_code=400,
                                 detail=ErrorConfig.empty_password)
-        elif username == "" and password == "":
+        elif username != Config.username and password != Config.password:
             raise HTTPException(status_code=400,
                                 detail=ErrorConfig.empty_username_password)

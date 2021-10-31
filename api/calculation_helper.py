@@ -9,10 +9,13 @@ class CalculationHelper:
         return result
 
     @staticmethod
-    def subtraction(value, result=0):
-        for i in map(int, value.split(",")):
-            result -= i
-        return result
+    def subtraction(value):
+        array = (list(map(int, value.split(","))))
+        first_result = list(map(int, value.split(",")))[0]
+        for i in range(1, len(list(map(int, value.split(","))))):
+            first_result = first_result - array[1]
+            array.pop(0)
+        return first_result
 
     @staticmethod
     def multiplication(value, result=1):
@@ -30,7 +33,7 @@ class CalculationHelper:
 
     @staticmethod
     def sum(value):
-        return (int(value) * (int(value) + 1)) / 2
+        return int((int(value) * (int(value) + 1)) / 2)
 
     @staticmethod
     def factorial(value):

@@ -1,3 +1,3 @@
 class Config:
-    username = "trendyol"
-    password = "discount"
+    username = "umutcolak"
+    password = "medium"

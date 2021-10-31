@@ -8,7 +8,7 @@ def test_check_post_request_status_for_multiplication_operation():
 
     operation = "multiplication"
     params = {
-        'params': "5,5,5"
+        'params': "5,5"
     }
     headers = {
         'username': Config.username,
@@ -16,4 +16,4 @@ def test_check_post_request_status_for_multiplication_operation():
     }
     response, response_body = BaseHelper.post_request_for_endpoint(operation=operation, params=params, headers=headers)
     assert response.status_code == 200
-    assert response_body["multiplication_result = "] == CalculationHelper.multiplication(params["params"])
+    assert response_body["multiplication_result = "] == 25
